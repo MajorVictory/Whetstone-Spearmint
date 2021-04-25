@@ -1,0 +1,30 @@
+#hotbar .bar-controls, #hotbar #macro-list {
+     color: var(--Spearmint-text-light-color);
+     background: var(--Spearmint-bg-color);
+     border: 1px solid var(--Spearmint-border-color);
+     box-shadow: 0 0 3px var(--Spearmint-border-color) inset;
+}
+
+
+#hotbar .macro.inactive {
+     box-shadow: 0 0 5px var(--Spearmint-border-color) inset;
+}
+
+#hotbar .macro.active {
+     background: var(--Spearmint-bg-color);
+}
+
+#hotbar .macro:hover {
+     box-shadow: 0 0 5px var(--Spearmint-highlight-color) inset;
+}
+
+#hotbar .macro.active:hover {
+     border: 1px solid var(--Spearmint-highlight-color);
+}
+
+
+#hotbar .macro {
+     border: 1px solid var(--Spearmint-border-color);
+     background: var(--Spearmint-bg-color);
+     box-shadow: 0 0 5px var(--Spearmint-border-color) inset;
+}

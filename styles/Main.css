@@ -1,0 +1,568 @@
+:root {
+	--Spearmint-bg-window-blendmode: luminosity;
+	--Spearmint-bg-sheet-blendmode: color-burn;
+	--Spearmint-bg-color: #3e5c86e6;
+	--Spearmint-bg-color-contrast: white;
+	--Spearmint-bg-color-half: hsla(215,37%,38%,0.45098);
+	--Spearmint-bg-color-darker: hsla(215,37%,28%,0.901961);
+	--Spearmint-bg-color-lighter: hsla(215,37%,48%,0.901961);
+	--Spearmint-text-light-color: #c6dceaff;
+	--Spearmint-text-light-color-contrast: black;
+	--Spearmint-text-light-color-half: hsla(203,46%,85%,0.5);
+	--Spearmint-text-light-color-darker: hsla(203,46%,75%,1);
+	--Spearmint-text-light-color-lighter: hsla(203,46%,95%,1);
+	--Spearmint-text-dark-color: #8dbbdcff;
+	--Spearmint-text-dark-color-contrast: black;
+	--Spearmint-text-dark-color-half: hsla(205,53%,71%,0.5);
+	--Spearmint-text-dark-color-darker: hsla(205,53%,61%,1);
+	--Spearmint-text-dark-color-lighter: hsla(205,53%,81%,1);
+	--Spearmint-text-highlight-color: #72b9d5ff;
+	--Spearmint-text-highlight-color-contrast: black;
+	--Spearmint-text-highlight-color-half: hsla(197,54%,64%,0.5);
+	--Spearmint-text-highlight-color-darker: hsla(197,54%,54%,1);
+	--Spearmint-text-highlight-color-lighter: hsla(197,54%,74%,1);
+	--Spearmint-text-selection-color: #9eb4d3ff;
+	--Spearmint-fg-color: #0c5f76ff;
+	--Spearmint-fg-color-contrast: white;
+	--Spearmint-fg-color-half: hsla(193,82%,25%,0.5);
+	--Spearmint-fg-color-darker: hsla(193,82%,15%,1);
+	--Spearmint-fg-color-lighter: hsla(193,82%,35%,1);
+	--Spearmint-highlight-color: #ee6c4dff;
+	--Spearmint-highlight-color-contrast: black;
+	--Spearmint-highlight-color-half: hsla(12,83%,62%,0.5);
+	--Spearmint-highlight-color-darker: hsla(12,83%,52%,1);
+	--Spearmint-highlight-color-lighter: hsla(12,83%,72%,1);
+	--Spearmint-border-color: #293241ff;
+
+	--default-primary-color: var(--Spearmint-text-light-color);
+	--default-secondary-color: var(--Spearmint-text-dark-color);
+	--default-tertiary-color: var(--Spearmint-text-dark-color-darker);
+	--default-light-color: var(--Spearmint-border-color);
+	--default-faint-color: var(--Spearmint-fg-color-half);
+	--default-primary-accent: var(--Spearmint-highlight-color);
+	--default-secondary-accent: var(--Spearmint-bg-color-lighter);
+	--always-prepared-accent: var(--Spearmint-fg-color-half);
+
+	scrollbar-color: var(--Spearmint-bg-color) var(--Spearmint-fg-color);
+}
+
+*::placeholder {
+	color: var(--Spearmint-text-dark-color-darker) !important;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: 0 0 1px var(--Spearmint-border-color) inset;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--Spearmint-bg-color);
+	border: 1px solid var(--Spearmint-border-color);
+}
+
+.banner {
+	background: goldenrod;
+	border: 1px solid var(--Spearmint-border-color);
+	box-shadow: 0 0 10px var(--Spearmint-highlight-color);
+}
+
+h1 {
+	font-size: 2em;
+	border-bottom: 2px solid var(--Spearmint-highlight-color);
+}
+h2 {
+	font-size: 1.5em;
+	border-bottom: 1px solid var(--Spearmint-highlight-color);
+}
+
+.app {
+	color: var(--Spearmint-text-light-color);
+	background-color: var(--Spearmint-bg-color);
+	background-blend-mode: var(--Spearmint-bg-window-blendmode);
+	border: 1px solid var(--Spearmint-border-color);
+}
+
+.window-app .window-content, .dnd5e.sheet .window-content,
+.tidy5e.sheet.actor #item-info-container {
+	color: var(--Spearmint-text-dark-color);
+	background-color: var(--Spearmint-bg-color-sheet);
+	background-blend-mode: var(--Spearmint-bg-sheet-blendmode);
+}
+
+.tidy5e.sheet.actor.npc .spellcasting-ability {
+	background-color: var(--Spearmint-bg-color-sheet);
+	background-blend-mode: var(--Spearmint-bg-sheet-blendmode);
+}
+
+#pause h3{
+	color: var(--Spearmint-text-light-color);
+	text-shadow: 1px 1px 10px var(--Spearmint-text-light-color-contrast);
+}
+
+.sidebar-tab .directory-list .directory-item h3,
+.sidebar-tab .directory-list .directory-item h4,
+li.folder.collapsed > .folder-header h3,
+.window-app.sidebar-popout .sidebar-tab .directory-list .directory-item h4 {
+	color: var(--Spearmint-text-light-color);
+}
+
+#WhetstoneCoreConfig .theme-list .theme-title,
+#WhetstoneCoreConfig .theme-list .theme-metadata,
+#WhetstoneCoreConfig .theme-list .theme-description,
+.window-app .sidebar-tab .directory-list .directory-item h4 {
+	color: var(--Spearmint-text-dark-color);
+}
+
+#WhetstoneCoreConfig .form-group,
+#WhetstoneThemeConfigDialog .form-group {
+	border-color: var(--Spearmint-border-color);
+}
+
+#WhetstoneCoreConfig nav.tabs,
+#WhetstoneThemeConfigDialog nav.tabs {
+	border-bottom: 2px solid var(--Spearmint-border-color);
+}
+
+.sidebar-tab .directory-list .directory-item.scene h3,
+#scenes .scene h3 {
+	color: var(--Spearmint-text-dark-color);
+	text-shadow: 1px 1px 3px var(--Spearmint-fg-color);
+}
+
+a[href] {
+	color: var(--Spearmint-highlight-color);
+}
+
+a:hover,
+.tabs .item.active,
+.dnd5e.chat-card .card-header h3:hover,
+.filepicker .directory > li:hover {
+	color: var(--Spearmint-highlight-color);
+	text-shadow: 0 0 8px var(--Spearmint-highlight-color);
+}
+
+a.entity-link,
+a.inline-roll {
+	background: var(--Spearmint-fg-color);
+	border: 1px solid var(--Spearmint-border-color);
+}
+
+::selection {
+	background: var(--Spearmint-text-selection-color);
+}
+
+hr {
+	border-top: 1px solid var(--Spearmint-border-color);
+	border-bottom: 1px solid var(--Spearmint-border-color);
+}
+
+blockquote {
+	border-left: 3px solid var(--Spearmint-border-color);
+}
+
+section.secret {
+	border-top: 1px solid var(--Spearmint-border-color);
+	border-bottom: 1px solid var(--Spearmint-border-color);
+}
+
+table {
+	border: 1px solid var(--Spearmint-border-color);
+}
+
+form button,
+.dialog .dialog-buttons button {
+	background: var(--Spearmint-fg-color);
+	border: 2px groove var(--Spearmint-border-color);
+}
+
+button:hover,
+.dialog .dialog-buttons button:hover {
+	background: var(--Spearmint-highlight-color);
+	color: var(--Spearmint-text-highlight-color);
+	border: 2px groove var(--Spearmint-border-color);
+	box-shadow: 0 0 5px var(--Spearmint-highlight-color);
+}
+
+select,
+button,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="range"], .range-value,
+input[type="range"] + .range-value,
+input[type="color"][data-edit],
+input[type="datetime-local"],
+.dnd5e input[type="text"],
+.dnd5e select,
+.dnd5e.sheet select {
+	color: var(--Spearmint-text-dark-color);
+	background: var(--Spearmint-fg-color);
+	border: 1px solid var(--Spearmint-border-color);
+}
+
+.dnd5e input[type="text"],
+.dnd5e input[type="number"],
+.dnd5e select {
+	color: var(--Spearmint-text-dark-color);
+}
+
+select:hover,
+select:focus,
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="color"][data-edit]:hover,
+input[type="color"][data-edit]:focus,
+input[type="range"]:hover,
+input[type="range"]:focus,
+.dnd5e input[type="text"]:hover,
+.dnd5e input[type="text"]:focus {
+	box-shadow: 0px 0px 5px var(--Spearmint-highlight-color);
+}
+
+textarea:focus {
+    outline: 2px solid var(--Spearmint-highlight-color);
+    box-shadow: 0 0 10px var(--Spearmint-highlight-color-contrast);
+}
+
+.dnd5e.sheet input[type="text"]:hover,
+.dnd5e.sheet input[type="number"]:hover,a
+.dnd5e.sheet input[type="text"]:focus,
+.dnd5e.sheet input[type="number"]:focus {
+	border: 1px solid var(--Spearmint-highlight-color);
+	box-shadow: 0 0 8px var(--Spearmint-highlight-color-contrast);
+}
+
+.dnd5e.sheet .editable h4.rollable:hover,
+.dnd5e.sheet .editable .rollable:hover > h4 {
+	color: var(--Spearmint-highlight-color);
+    text-shadow: 0 0 10px var(--Spearmint-highlight-color-contrast);
+}
+
+
+/*
+.app {
+	color: var(--Spearmint-text-light-color);
+	background-color: var(--Spearmint-bg-color);
+	background-blend-mode: var(--Spearmint-bg-window-blendmode);
+}
+
+.window-app .window-content,
+.dnd5e.sheet .window-content {
+	color: var(--Spearmint-text-dark-color);
+	background-color: var(--Spearmint-bg-color);
+	background-blend-mode: var(--Spearmint-bg-sheet-blendmode);
+}
+*/
+
+.app.sidebar-popout .window-content {
+	color: var(--Spearmint-text-light-color);
+}
+
+#module-management .package-list .package-title,
+#module-management .package-list .package-metadata,
+#module-management .package-list .package-description {
+	color: var(--Spearmint-text-dark-color);
+}
+
+.window-app .window-resizable-handle {
+	background: var(--Spearmint-bg-color);
+	border: 1px solid var(--Spearmint-border-color);
+}
+
+#context-menu {
+	background: var(--Spearmint-bg-color);
+	color: var(--Spearmint-text-light-color);
+}
+
+#context-menu li.context-item:hover {
+	color: var(--Spearmint-highlight-color);
+	text-shadow: 0 0 4px var(--Spearmint-highlight-color);
+}
+
+.dnd5e .tag {
+	border: 1px solid var(--Spearmint-border-color);
+    background: var(--Spearmint-fg-color);
+}
+
+.dnd5e.sheet.actor.character .sheet-header .charlevel,
+.dnd5e.sheet.actor.character .sheet-header .experience span.max {
+	color: var(--Spearmint-text-dark-color);
+}
+
+.dnd5e.sheet.actor.character .sheet-header .xpbar {
+	background: var(--Spearmint-bg-color);
+}
+
+.dnd5e.sheet .sheet-header img.profile,
+.dnd5e.sheet.actor .sheet-header .attributes .attribute {
+	border-right: 2px groove var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet .sheet-header .summary {
+	border-top: 2px groove var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet .sheet-header,
+.dnd5e.sheet.actor .sheet-header .summary,
+.dnd5e.sheet.actor .ability-scores .ability,
+.dnd5e.sheet.actor .counters {
+	border-bottom: 2px groove var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet .sheet-header .summary li {
+	color: var(--Spearmint-text-dark-color);
+	border-right: 2px groove var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet .sheet-navigation .item {
+    border-bottom: 3px solid var(--Spearmint-text-dark-color);
+}
+
+.dnd5e.sheet .sheet-navigation .item.active {
+	color: var(--Spearmint-highlight-color);
+	border-bottom: 3px solid var(--Spearmint-highlight-color);
+}
+
+.dnd5e.sheet.actor .ability-scores,
+.dnd5e.sheet.actor ul.skills-list,
+.dnd5e.sheet.actor ul.attributes li.attribute {
+	border: 2px groove var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet.actor h4.box-title,  h4.box-title,
+.dnd5e.sheet.actor .counters .counter h4,
+.dnd5e .form-group label, .form-group label {
+	color: var(--Spearmint-text-dark-color-darker);
+}
+
+.dnd5e.sheet.actor .proficiency-toggle {
+	color: var(--Spearmint-text-highlight-color);
+}
+
+.dnd5e.sheet.actor .proficient .proficiency-toggle {
+	color: var(--Spearmint-highlight-color);
+}
+
+.dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-mod,
+.dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-save {
+	border-top: 2px groove var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-mod {
+	border-right: 2px groove var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-save {
+	border-left: 2px groove var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet.actor h4.box-title,
+.dnd5e.sheet .items-list .item {
+	border-bottom: 1px solid var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet.actor.character .sheet-header .attributes a.rest {
+	border: 1px solid var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet.actor .inventory-list .item-weight,
+.dnd5e.sheet .effects .item .effect-source,
+.dnd5e.sheet .effects .item .effect-duration,
+.dnd5e.sheet .effects .item .effect-controls {
+	border-left: 1px solid var(--Spearmint-border-color);
+    border-right: 1px solid var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet.actor .inventory-list .item-detail,
+.dnd5e.sheet.actor .spell-slots,
+.dnd5e.sheet.actor .spell-comps,
+.dnd5e.sheet.actor .spell-school,
+.dnd5e.sheet.actor .spell-action,
+.dnd5e.sheet.actor .spell-target {
+    border-right: 1px solid var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet.actor .inventory-filters .currency input[type="text"] {
+    border-bottom: 2px groove var(--Spearmint-border-color);
+}
+
+.tabs .item.active {
+	text-shadow: 0 0 10px var(--Spearmint-highlight-color);
+}
+
+nav.list-filters a.filter.active {
+	border-bottom: 2px solid var(--Spearmint-border-color);
+}
+
+form .notes,
+form .hint,
+.dnd5e.sheet.actor .traits i.fas {
+	color: var(--Spearmint-text-dark-color);
+}
+
+.filepicker .display-modes a {
+	background: var(--Spearmint-fg-color);
+	border: 1px solid var(--Spearmint-border-color);
+}
+
+.filepicker .display-modes a.active {
+	background: var(--Spearmint-highlight-color);
+	color: var(--Spearmint-text-highlight-color);
+}
+
+.tidy5e.sheet.actor ul.attributes li.attribute .attribute-header .res-options {
+	color: var(--Spearmint-text-highlight-color);
+}
+
+.tidy5e.sheet.actor .traits label,
+.tidy5e.sheet.actor .traits .senses div[contenteditable]:before {
+	color: var(--Spearmint-text-light-color);
+}
+
+.tidy5e.sheet.actor .inventory-filters h3,
+.tidy5e.sheet.actor .inventory-filters .filter-title {
+	color: var(--Spearmint-text-dark-color);
+}
+
+.dnd5e.sheet.actor .inventory-list .item-name {
+	color: var(--Spearmint-text-dark-color);
+}
+
+.dnd5e.sheet .editable .rollable:hover {
+	color: var(--Spearmint-highlight-color);
+	text-shadow: 0 0 10px var(--Spearmint-highlight-color);
+}
+
+.dnd5e.sheet .filter-list .filter-item {
+	border-bottom: 3px solid var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet .filter-list .filter-item.active {
+	border-bottom: 3px solid var(--Spearmint-highlight-color);
+}
+
+.dnd5e.sheet .filter-list .filter-item:hover {
+	text-shadow: 0 0 4px var(--Spearmint-highlight-color);
+	border-bottom: 3px solid var(--Spearmint-highlight-color);
+}
+
+.dnd5e.sheet .items-list .items-header {
+	border: 2px groove var(--Spearmint-border-color);
+}
+
+.dnd5e.sheet span.sep,
+.dnd5e.sheet .items-list,
+.dnd5e.sheet.actor .spell-school,
+.dnd5e.sheet.actor .spell-action,
+.dnd5e.sheet.actor .spell-target,
+.dnd5e.sheet.actor .spell-slots,
+.dnd5e.sheet.actor .spell-comps,
+.dnd5e.sheet.actor .inventory-list .item-detail,
+.dnd5e.sheet.actor .inventory-list .item-controls a,
+.dnd5e.sheet.actor .inventory-filters .currency label,
+.dnd5e.sheet.actor.character .inventory .item-controls .item-toggle,
+.dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle,
+.tidy5e.sheet.actor .inventory-list .item-detail,
+.tidy5e.sheet.actor .inventory-list .item-controls,
+.tidy5e.sheet.actor .inventory-list .spell-detail,
+.tidy5e.sheet.actor .traits .tag {
+	color: var(--Spearmint-text-dark-color);
+}
+
+.dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
+	color: var(--Spearmint-text-light-color);
+}
+
+.dnd5e.sheet.actor .inventory-list .item-controls a:hover,
+.dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.active,
+.dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.active {
+	color: var(--Spearmint-highlight-color);
+}
+
+.dnd5e.sheet.actor .spell-component.C,
+.dnd5e.sheet.actor .spell-component.R {
+	color: var(--Spearmint-text-highlight-color);
+	background: var(--Spearmint-fg-color);
+}
+
+.dnd5e.sheet.actor ul.skills-list li.skill .skill-passive {
+	color: var(--Spearmint-text-dark-color-darker);
+}
+
+/* ---- Calendar Compat ---- */
+.calendar-events-container, .calendar-form-container {
+	background: none !important;
+}
+
+#calendar-time-container {
+	color: var(--Spearmint-text-light-color);
+	background: var(--Spearmint-bg-color);
+}
+
+.calendar--header, #calendar-weather--container header {
+	background: var(--Spearmint-bg-color-darker);
+}
+
+#calendar-weather--container header select {
+	color: var(--Spearmint-text-light-color);
+}
+
+#calendar-weather--container header select option {
+	background: var(--Spearmint-bg-color-darker);
+	color: var(--Spearmint-text-light-color);
+}
+
+/* The Furnace */
+.macro-sheet .form-group.command .furnace-macro-command {
+	background: var(--Spearmint-fg-color);
+}
+
+/* Combat Enahncements */
+.combatant .ce-modify-hp {
+	color: var(--Spearmint-text-dark-color);
+}
+
+/* Combat Carousel */
+#combat-carousel .card {
+	/* Hardcoded in Whetstone.js*/
+}
+#combat-carousel .card,
+#combat-carousel .splide__slide:hover .name,
+#combat-carousel .carousel-icon,
+#combat-carousel .combat-control a,
+#combat-carousel .encounter-info {
+	color: var(--Spearmint-text-light-color);
+	background-color: var(--Spearmint-bg-color);
+	background-blend-mode: var(--Spearmint-bg-window-blendmode);
+}
+
+#combat-carousel .splide__slide:hover .overlay-properties {
+	background: none !important;
+}
+
+/* Token Action HUD */
+.tah-title-button, .tah-action button {
+	background: var(--Spearmint-bg-color);
+	color: var(--Spearmint-text-light-color);
+	border: 1px solid var(--Spearmint-border-color);
+	box-shadow: 0 0 5px var(--Spearmint-border-color) inset;
+}
+
+.tah-subtitle,
+#tah-reposition > .fa, #tah-reposition > .fas,
+#tah-categories > .fa, #tah-categories > .fas {
+	color: var(--Spearmint-fg-color);
+	text-shadow: -1px -1px 1px var(--Spearmint-bg-color), -1px -1px 1px var(--Spearmint-bg-color), -1px -1px 1px var(--Spearmint-bg-color), -1px -1px 1px var(--Spearmint-bg-color);
+}
+
+.tah-action .active {
+	background: var(--Spearmint-highlight-color);
+}
+
+/* VTTA */
+#vtta-notifications > div {
+	color: var(--Spearmint-text-light-color);
+	background-color: var(--Spearmint-bg-color);
+	background-blend-mode: var(--Spearmint-bg-window-blendmode);
+	border: 1px solid var(--Spearmint-border-color);
+	border-radius: 5px;
+    box-shadow: 0 0 20px #000;
+}

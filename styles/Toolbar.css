@@ -1,0 +1,27 @@
+#controls .scene-control, #controls .control-tool {
+	background: var(--Spearmint-bg-color);
+	color: var(--Spearmint-text-light-color);
+	border: 1px solid var(--Spearmint-border-color);
+	box-shadow: 0 0 5px var(--Spearmint-border-color) inset;
+}
+
+#controls .scene-control.active,
+#controls .control-tool.active,
+#controls .scene-control:hover,
+#controls .control-tool:hover {
+	background: var(--Spearmint-bg-color);
+	border: 1px solid var(--Spearmint-highlight-color);
+	box-shadow: 0 0 5px var(--Spearmint-highlight-color) inset;
+}
+
+#controls .control-tool.toggle {
+	background: var(--Spearmint-border-color);
+	border: 1px solid var(--Spearmint-highlight-color);
+}
+
+#controls .control-tool.toggle.active,
+#controls .control-tool.toggle:hover {
+	background: var(--Spearmint-highlight-color);
+	border: 1px solid var(--Spearmint-highlight-color);
+	box-shadow: 0 0 10px var(--Spearmint-fg-color);
+}

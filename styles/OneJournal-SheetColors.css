@@ -1,0 +1,8 @@
+/* ******************************************* */
+/* ******* OneJournal Sheet Color Overrides */
+/* ******************************************* */
+:root {
+  --ojTextColor: var(--Spearmint-text-dark-color);
+  --ojTextColorContrast: var(--Spearmint-text-light-color);
+  --ojAccentColor: var(--Spearmint-highlight-color);
+}

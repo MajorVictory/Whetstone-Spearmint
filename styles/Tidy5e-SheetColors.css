@@ -1,0 +1,20 @@
+/* ******************************************* */
+/* ******* Tidy5e Sheet Color Overrides */
+/* ******************************************* */
+.system-dnd5e {
+  --primary-font: 				var(--Spearmint-text-dark-color);
+  --background: 				var(--Spearmint-bg-color);
+  --faintest-color: 			rgba(0,0,0,.05);
+  --faint-color: 				rgba(0,0,0,.1);
+  --light-color: 				var(--Spearmint-fg-color);
+  --primary-color: 				var(--Spearmint-text-light-color);
+  --secondary-color: 			var(--Spearmint-text-dark-color);
+  --tertiary-color: 			var(--Spearmint-text-dark-color-darker);
+  --primary-accent: 			var(--Spearmint-highlight-color);
+  --always-prepared-accent: 	var(--Spearmint-fg-color-half);
+  --warning-accent: 			var(--Spearmint-highlight-color-lighter);
+  --icon-font:					var(--Spearmint-text-light-color);
+  --icon-background:			var(--Spearmint-bg-color);
+  --icon-shadow:				var(--Spearmint-highlight-color);
+
+}
