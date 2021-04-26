@@ -260,13 +260,6 @@ Hooks.once('WhetstoneReady', () => {
 	});
 });
 
-// create/remove the quick access config button
-Hooks.on('renderSettings', () => {
-	WhetstoneThemes.toggleConfigButton(
-		JSON.parse(game.settings.get('Whetstone', 'addMenuButton'))
-	);
-});
-
 // this implementation is for v1.1.2 only
 // this process will be streamlined in future versions
 // this is a special workaround for image urls being in css variables

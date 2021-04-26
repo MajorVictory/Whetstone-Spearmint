@@ -3,7 +3,7 @@
   "name": "Whetstone-Spearmint",
   "title": "Spearmint (A Whetstone Theme)",
   "description": "Spearmint is a module stub for authors looking to create a Whetstone theme.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "MajorVictory",
   "authors": [{
     "name": "MajorVictory",
@@ -24,7 +24,7 @@
   "packs": [],
   "url": "https://github.com/MajorVictory/Whetstone-Spearmint",
   "manifest": "https://raw.githubusercontent.com/MajorVictory/Whetstone-Spearmint/master/module.json",
-  "download": "https://github.com/MajorVictory/Whetstone-Spearmint/releases/download/1.0.0/Whetstone-Spearmint.zip",
+  "download": "https://github.com/MajorVictory/Whetstone-Spearmint/releases/download/1.0.1/Whetstone-Spearmint.zip",
   "compatibleCoreVersion": "0.7.9",
   "minimumCoreVersion": "0.7.9",
   "media": [

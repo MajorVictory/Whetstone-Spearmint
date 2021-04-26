@@ -25,6 +25,10 @@
 
 ![](images/preview.jpg)
 
+## Changelog
+
+[Previous Versions Changelog](CHANGELOG.md)
+
 [foundry-shield-079]: https://img.shields.io/badge/Foundry-v0.7.9-informational
 [foundry-url]: https://foundryvtt.com/
 [forks-shield]: https://img.shields.io/github/forks/MajorVictory/Whetstone-Spearmint.svg?style=flat-square
